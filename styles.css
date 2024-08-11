@@ -1,0 +1,57 @@
+/* Basic reset and body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the whole content */
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px; /* Limit the width of the content */
+    width: 100%;
+}
+
+/* Title styling */
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Chart container styling */
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between charts */
+}
+
+/* Individual canvas element styling */
+canvas {
+    width: 100%;
+    max-width: 600px; /* Maximum width for each chart */
+    height: 400px; /* Fixed height for charts */
+    background-color: #fff; /* Background color of the chart area */
+    border: 1px solid #ddd; /* Light border around the chart */
+    border-radius: 8px; /* Rounded corners for the chart */
+}
+
+/* Optional: Add responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    canvas {
+        max-width: 90%; /* Ensure charts fit well on smaller screens */
+        height: 300px; /* Adjust height for smaller screens */
+    }
+}
